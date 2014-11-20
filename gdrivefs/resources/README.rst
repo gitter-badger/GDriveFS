@@ -89,6 +89,16 @@ Troubleshooting
 
       $ sudo pip install --allow-unverified antlr-python-runtime --allow-external antlr-python-runtime gdrivefs
 
+- If you see an ImportError regarding "ez_setup", then you'll need to install
+  ez_setup with::
+
+      $ sudo pip install ez_setup
+
+- After installation, if you see an ImportError regarding "discovery", then try
+  the following command::
+
+      $ sudo pip install --upgrade google-api-python-client
+
 
 =====
 Usage
